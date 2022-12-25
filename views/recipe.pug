@@ -1,0 +1,24 @@
+html
+    head
+        title #{recipe.name}
+    body
+        div
+
+            h1 Recipe Details:
+            br
+            br
+            h4 Recipe Name:
+            p #{recipe.name}
+            br
+            h4 Recipe Details:
+            p #{recipe.description}
+            br
+            h4 Recipe Preptime:
+            p #{recipe.preptime} minutes
+            br
+            h4 Recipe Cooktime:
+            p #{recipe.cooktime} minutes
+            br
+            h4 Ingredients:
+            each element in (recipe.ingredients)
+                p #{element.amount} #{element.unit}: #{element.name}
