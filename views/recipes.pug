@@ -1,0 +1,11 @@
+html
+    head
+        title Recipe Book
+    body
+        div
+            h1 List of all the Recipes
+            each recipe in recipes
+                a(href="/recipes/" + recipe.id) #{recipe.name}
+                br
+                br
+        
